@@ -11,7 +11,7 @@ public class Day1 {
 			break;}
 		}
 
-		System.out.println(floor);
+		System.out.println("End floor: " + floor);
 
 	}
 

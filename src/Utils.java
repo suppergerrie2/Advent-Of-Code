@@ -1,5 +1,8 @@
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.io.UnsupportedEncodingException;
 import java.util.Scanner;
 
 public class Utils {
@@ -30,5 +33,11 @@ public class Utils {
 	    catch( Exception e ) {
 	        return false;
 	    }
+	}
+	
+	public static void writeFile(String filename, String file) throws IOException{
+		PrintWriter writer = new PrintWriter("D:/java/workspace/Adventcalander/" + filename + ".txt", "UTF-8");
+		writer.println(file);
+		writer.close();
 	}
 }
